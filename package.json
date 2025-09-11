@@ -1,0 +1,20 @@
+{
+  "name": "estudo-workflow-templates",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "pretest": "npm run build",
+    "test": "node --test dist/**/*.test.js",
+    "start": "node dist/index.js",
+    "build:pages": "npm run build && node scripts/generate-site.js"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.4",
+    "@types/node": "^20.16.5"
+  }
+}
