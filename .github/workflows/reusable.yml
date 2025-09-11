@@ -14,4 +14,4 @@ jobs:
     steps:
       - run: |
           echo "Olá, ${{ inputs.nome }}"
-          echo "Valor do TOKEN: ${{ secrets.MY_TOKEN }}"
+          echo "Valor do TOKEN: $TOKEN"
