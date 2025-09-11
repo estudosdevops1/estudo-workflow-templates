@@ -1,0 +1,15 @@
+on:
+  workflow_call:
+    inputs:
+      nome:
+        required: true
+        type: string
+    secrets:
+      TOKEN:
+        required: true
+
+jobs:
+  exemplo:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Olá, ${{ inputs.nome }}"
