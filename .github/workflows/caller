@@ -1,7 +1,10 @@
+name: caller
+
+on: push
+
 jobs:
   call-reusable:
-    uses: owner/repo/.github/workflows/reusable.yml@main
-    uses: estudosdevops1/estudo-workflow-templates.github/workflows/reusable.yml@main
+    uses: estudosdevops1/estudo-workflow-templates/.github/workflows/reusable.yml@main
     with:
       nome: 'Igor'
     secrets:
