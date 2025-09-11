@@ -6,7 +6,7 @@
   "scripts": {
     "build": "tsc -p tsconfig.json",
     "pretest": "npm run build",
-    "test": "node --test dist/**/*.test.js",
+  "test": "node --test dist",
     "start": "node dist/index.js",
     "build:pages": "npm run build && node scripts/generate-site.js"
   },
@@ -15,6 +15,6 @@
   },
   "devDependencies": {
     "typescript": "^5.5.4",
-    "@types/node": "^20.16.5"
+    "@types/node": "20.19.13"
   }
 }
