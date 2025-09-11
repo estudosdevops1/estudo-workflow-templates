@@ -12,4 +12,6 @@ jobs:
   exemplo:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "Olá, ${{ inputs.nome }}"
+      - run: |
+          echo "Olá, ${{ inputs.nome }}"
+          echo "Valor do TOKEN: ${{ secrets.TOKEN }}" 
