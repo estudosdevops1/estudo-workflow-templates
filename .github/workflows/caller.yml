@@ -8,4 +8,4 @@ jobs:
     with:
       nome: 'Igor'
     secrets:
-      TOKEN: ${{ secrets.MY_TOKEN }}
+      TOKEN: ${{ secrets.GITHUB_TOKEN }}
