@@ -4,24 +4,19 @@
 name: Node.js CI
 
 on:
-  push:
-    branches: [main, dev, feature/*]
   pull_request:
-    branches: [main]
+    branches: [main, dev, feature/*]
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
-
     strategy:
       matrix:
         node-version: [18.x, 20.x, 22.x]
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
-
     steps:
     - name: Show event trigger
-       run: echo "Triggered by ${{ github.event_name }}"
+      run: echo "Triggered by ${{ github.event_name }}"
     - uses: actions/checkout@v4
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v4
@@ -30,4 +25,8 @@ jobs:
         cache: 'npm'
     - run: npm ci
     - run: npm run build --if-present
+    - uses: actions/upload-artifact@main
+        with:
+        name: webpack artifacts
+          path: public/
     - run: npm test
