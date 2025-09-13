@@ -21,7 +21,7 @@ jobs:
 
     steps:
     - name: Show event trigger
-       run: echo "Triggered by ${{ github.event_name }}"
+      run: echo "Triggered by ${{ github.event_name }}"
     - uses: actions/checkout@v4
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v4
