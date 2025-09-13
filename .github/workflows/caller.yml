@@ -6,6 +6,6 @@ jobs:
   call-reusable:
     uses: estudosdevops1/estudo-workflow-templates/.github/workflows/reusable.yml@main
     with:
-      nome: 'Igor Santana'
+      nome: 'Igor Antonio Barbosa Trajano de Santana'
     secrets:
       TOKEN: ${{ secrets.GITHUB_TOKEN }}
