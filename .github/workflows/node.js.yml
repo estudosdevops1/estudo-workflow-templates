@@ -20,11 +20,10 @@ jobs:
         with:
           name: webpack artifacts
           path: dist/
-jobs:
   test:
     needs: build
     runs-on: ubuntu-latest
-      steps:
+    steps:
       - uses: actions/checkout@v3
       - uses: actions/download-artifact@main
         with:
