@@ -2,6 +2,10 @@
 
 [![Node.js CI](https://github.com/estudosdevops1/estudo-workflow-templates/actions/workflows/node.js.yml/badge.svg?branch=dev)](https://github.com/estudosdevops1/estudo-workflow-templates/actions/workflows/node.js.yml)
 
+
+![example branch parameter.](https://github.com/estudosdevops1/estudo-workflow-templates/actions/workflows/node.js.yml/badge.svg?branch=dev)
+
+
 Este repositório foi adaptado para você experimentar pipelines de **build**, **test** e **deploy (GitHub Pages)** usando GitHub Actions.
 
 ### O que está configurado
