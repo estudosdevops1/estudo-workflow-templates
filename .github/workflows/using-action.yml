@@ -1,3 +1,6 @@
+name: Usando composite action
+on:
+  push:
 jobs:
   test:
     runs-on: ubuntu-latest
