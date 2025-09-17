@@ -9,4 +9,4 @@ jobs:
         id: my-action
         uses: ./.github/actions/my-composite-action
       - name: Display result
-        run: echo "Script Result: ${{ steps.my-action.outputs.script-result }}"
+        run: echo 'Script Result: ${{ steps.my-action.outputs.script-result }}'
