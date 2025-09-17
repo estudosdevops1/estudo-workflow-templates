@@ -1,0 +1,9 @@
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run composite action
+        id: my-action
+        uses: ./.github/actions/my-composite-action
+      - name: Display result
+        run: echo "Script Result: ${{ steps.my-action.outputs.script-result }}"
