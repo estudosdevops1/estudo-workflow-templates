@@ -9,6 +9,6 @@ jobs:
         uses: actions/checkout@v4
       - name: Run composite action
         id: my-action
-        uses: ./estudo-workflow-templates/
+        uses: ./
       - name: Display result
         run: echo "Script Result:" ${{ steps.my-action.outputs.script-result }}
