@@ -5,6 +5,8 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
+      - name: checkout do codigo para dentro do runner
+        uses: actions/checkout@v4
       - name: Run composite action
         id: my-action
         uses: ./
