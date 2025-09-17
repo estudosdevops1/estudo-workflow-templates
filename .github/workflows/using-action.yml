@@ -7,6 +7,6 @@ jobs:
     steps:
       - name: Run composite action
         id: my-action
-        uses: ./.github/actions/my-composite-action
+        uses: ./estudo-workflow-templates/
       - name: Display result
         run: echo "Script Result:" ${{ steps.my-action.outputs.script-result }}
